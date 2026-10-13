@@ -1,2 +1,10 @@
+packages:
+  - '.'
+
+# pnpm 10 (Cloudflare Pages build image)
+onlyBuiltDependencies:
+  - esbuild
+
+# pnpm 11+
 allowBuilds:
   esbuild: true
