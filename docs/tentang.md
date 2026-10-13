@@ -50,9 +50,7 @@ kertas, dan kopi yang keburu dingin. Wifi balai pun masih menumpang ke warung.
 
 ## Siapa saja di sini
 
-| | |
-|---|---|
-| [Pak Lurah](/karakter/pak-lurah) | kepala kampung, penerus perintah |
-| [Bang Hos](/karakter/bang-hos) | pemilik Warung Madura 24 jam |
-| [Warga lainnya](/karakter/warga-lain) | warga kedua, ketua pos, Wa Handa, Pak Marbot, ayam, merpati |
-| [Neng Lia](/karakter/neng-lia) · [Ceu Enung](/karakter/ceu-enung) | keluarga Pak Lurah, muncul di momen tertentu |
+<div class="grid-warga">
+  <KartuWarga slug="pak-lurah" />
+  <KartuWarga slug="bang-hos" />
+</div>

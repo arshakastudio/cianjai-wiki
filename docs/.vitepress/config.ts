@@ -6,9 +6,23 @@ export default defineConfig({
   description: 'Wiki Kampung Cianj.AI — warga, tempat, dan episode dari kampung pixel-art di Instagram @cianj.ai.',
   cleanUrls: true,
   lastUpdated: true,
-  head: [['link', { rel: 'icon', href: '/karakter/pak-lurah/portrait-transparent@4x.png' }]],
+  head: [
+    ['link', { rel: 'icon', type: 'image/svg+xml', href: '/brand/logo.svg' }],
+    ['link', { rel: 'apple-touch-icon', href: '/brand/apple-touch-icon.png' }],
+    ['meta', { name: 'theme-color', content: '#2f6b2a' }],
+    ['meta', { property: 'og:image', content: '/brand/logo.png' }],
+    ['link', { rel: 'preconnect', href: 'https://fonts.googleapis.com' }],
+    ['link', { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' }],
+    [
+      'link',
+      {
+        rel: 'stylesheet',
+        href: 'https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600..800;1,9..144,500&family=Nunito+Sans:opsz,wght@6..12,400..800&family=Pixelify+Sans:wght@500..700&display=swap',
+      },
+    ],
+  ],
   themeConfig: {
-    logo: '/karakter/pak-lurah/portrait-transparent@4x.png',
+    logo: '/brand/logo.svg',
     nav: [
       { text: 'Tentang', link: '/tentang' },
       { text: 'Karakter', link: '/karakter/' },
@@ -24,9 +38,6 @@ export default defineConfig({
         { text: 'Semua karakter', link: '/karakter/' },
         { text: 'Pak Lurah', link: '/karakter/pak-lurah' },
         { text: 'Bang Hos', link: '/karakter/bang-hos' },
-        { text: 'Neng Lia', link: '/karakter/neng-lia' },
-        { text: 'Ceu Enung', link: '/karakter/ceu-enung' },
-        { text: 'Warga lainnya', link: '/karakter/warga-lain' },
       ] },
       { text: 'Episode', items: [
         { text: 'Daftar episode', link: '/episode/' },

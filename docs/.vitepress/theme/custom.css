@@ -1,72 +1,852 @@
+/* Kampung Cianj.AI — palette and fonts follow the brand in konten-studio (src/brands/kampung-cianjai.ts):
+   cream paper, rice green, roof clay, river blue, ink #2a1a10. Pixel art is never smoothed. */
+
 :root {
-  --vp-c-brand-1: #3f7d32;
-  --vp-c-brand-2: #4f9a40;
-  --vp-c-brand-3: #5aa84a;
-  --vp-c-brand-soft: rgba(79, 154, 64, 0.14);
-  --vp-home-hero-name-color: transparent;
-  --vp-home-hero-name-background: linear-gradient(120deg, #3f7d32 30%, #c0732a);
-  --vp-home-hero-image-background-image: linear-gradient(-45deg, #8bc56a 50%, #e8b45c 50%);
-  --vp-home-hero-image-filter: blur(56px);
-}
-.dark {
-  --vp-c-brand-1: #8fd17a;
-  --vp-c-brand-2: #79c063;
-  --vp-c-brand-3: #5aa84a;
+  --kc-kertas: #f3efdf;
+  --kc-kartu: #fffcf2;
+  --kc-garis: #ddd3b8;
+  --kc-tinta: #2a1a10;
+  --kc-redup: #7a6a55;
+  --kc-hijau: #4f9a3c;
+  --kc-hijau-tua: #2f6b2a;
+  --kc-hijau-muda: #e3f0d6;
+  --kc-rumput: #6fb352;
+  --kc-genteng: #c8452f;
+  --kc-sungai: #2f8fb5;
+  --kc-langit: #bfe1ee;
+  --kc-bayang: #2a1a10;
+  --kc-pixel: 3px;
+
+  --vp-font-family-base: 'Nunito Sans', ui-sans-serif, system-ui, sans-serif;
+  --vp-font-family-mono: 'JetBrains Mono', ui-monospace, monospace;
+  --kc-display: 'Fraunces', Georgia, serif;
+  --kc-pixel-font: 'Pixelify Sans', 'Nunito Sans', sans-serif;
+
+  --vp-c-bg: var(--kc-kertas);
+  --vp-c-bg-alt: #ebe5d0;
+  --vp-c-bg-elv: var(--kc-kartu);
+  --vp-c-bg-soft: #ece5cf;
+  --vp-c-divider: var(--kc-garis);
+  --vp-c-border: #cdc1a1;
+  --vp-c-gutter: var(--kc-garis);
+  --vp-c-text-1: var(--kc-tinta);
+  --vp-c-text-2: #5c4b38;
+  --vp-c-text-3: var(--kc-redup);
+  --vp-c-brand-1: var(--kc-hijau-tua);
+  --vp-c-brand-2: var(--kc-hijau);
+  --vp-c-brand-3: var(--kc-hijau);
+  --vp-c-brand-soft: rgba(79, 154, 60, 0.16);
+  --vp-c-default-soft: rgba(42, 26, 16, 0.06);
+  --vp-nav-bg-color: rgba(243, 239, 223, 0.92);
+  --vp-sidebar-bg-color: #ece5cf;
+  --vp-code-bg: rgba(42, 26, 16, 0.07);
+  --vp-c-tip-1: var(--kc-hijau-tua);
+  --vp-c-tip-soft: var(--kc-hijau-muda);
 }
 
-/* pixel art stays crisp */
-.VPHero .image-src,
-.pixel,
-.vp-doc img[src*='/karakter/'] {
+.dark {
+  --kc-kertas: #161b2b;
+  --kc-kartu: #20273b;
+  --kc-garis: #323a55;
+  --kc-tinta: #f3efdf;
+  --kc-redup: #a59c88;
+  --kc-hijau: #8fcf6f;
+  --kc-hijau-tua: #a8dd8b;
+  --kc-hijau-muda: #233826;
+  --kc-langit: #263252;
+  --kc-bayang: #070a13;
+
+  --vp-c-bg: var(--kc-kertas);
+  --vp-c-bg-alt: #11152280;
+  --vp-c-bg-elv: var(--kc-kartu);
+  --vp-c-bg-soft: #1c2235;
+  --vp-c-border: #3d4664;
+  --vp-c-text-1: #f3efdf;
+  --vp-c-text-2: #cfc6b1;
+  --vp-c-text-3: #a59c88;
+  --vp-c-brand-1: #a8dd8b;
+  --vp-c-brand-2: #8fcf6f;
+  --vp-c-brand-3: #4f9a3c;
+  --vp-c-brand-soft: rgba(143, 207, 111, 0.16);
+  --vp-c-default-soft: rgba(243, 239, 223, 0.08);
+  --vp-nav-bg-color: rgba(22, 27, 43, 0.92);
+  --vp-sidebar-bg-color: #11151f;
+  --vp-code-bg: rgba(243, 239, 223, 0.08);
+}
+
+body {
+  background: var(--vp-c-bg);
+}
+
+/* ---------- pixel art stays crisp ---------- */
+img[src*='/karakter/'],
+img[src*='/sprite/'],
+img[src*='/brand/'],
+.VPNavBarTitle img {
   image-rendering: pixelated;
 }
 
-.kartu-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
-  gap: 16px;
-  margin: 24px 0;
+/* ---------- shared pixel frame ---------- */
+.kc-bingkai,
+.vp-doc p > img {
+  border: var(--kc-pixel) solid var(--kc-tinta);
+  box-shadow: 6px 6px 0 var(--kc-bayang);
+  border-radius: 4px;
+  background: var(--kc-kartu);
 }
-.kartu {
-  display: block;
-  border: 1px solid var(--vp-c-divider);
-  border-radius: 12px;
-  padding: 16px;
-  text-align: center;
-  background: var(--vp-c-bg-soft);
-  text-decoration: none !important;
-  color: var(--vp-c-text-1) !important;
-  transition: border-color 0.2s;
+.dark .vp-doc p > img {
+  border-color: #070a13;
 }
-.kartu:hover { border-color: var(--vp-c-brand-1); }
-.kartu img { width: 112px; margin: 0 auto 8px; }
-.kartu .emoji { font-size: 56px; line-height: 112px; display: block; margin-bottom: 8px; }
-.kartu strong { display: block; font-size: 16px; }
-.kartu span { display: block; font-size: 13px; color: var(--vp-c-text-2); }
 
-.profil {
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--kc-pixel-font);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--kc-hijau-tua);
+  background: var(--kc-hijau-muda);
+  border: 2px solid currentColor;
+  padding: 2px 10px;
+  border-radius: 2px;
+}
+
+/* ---------- nav + sidebar ---------- */
+.VPNavBar {
+  border-bottom: var(--kc-pixel) solid var(--kc-tinta) !important;
+}
+.dark .VPNavBar {
+  border-bottom-color: #070a13 !important;
+}
+.VPNavBar .divider-line {
+  display: none;
+}
+.VPNavBarTitle .title {
+  font-family: var(--kc-display);
+  font-weight: 700;
+  font-size: 19px;
+  letter-spacing: -0.01em;
+}
+.VPNavBarTitle .logo {
+  height: 30px;
+  border-radius: 7px;
+}
+.VPNavBarMenuLink {
+  font-weight: 700 !important;
+}
+.VPSidebar {
+  border-right: var(--kc-pixel) solid var(--kc-garis);
+}
+.VPSidebarItem.level-0 > .item .text {
+  font-family: var(--kc-pixel-font);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-size: 13px;
+}
+.VPSidebarItem.is-active > .item .text {
+  font-weight: 800;
+}
+
+/* ---------- doc typography ---------- */
+.vp-doc h1,
+.vp-doc h2,
+.vp-doc h3 {
+  font-family: var(--kc-display);
+  letter-spacing: -0.015em;
+}
+.vp-doc h1 {
+  font-size: 44px;
+  line-height: 1.1;
+  font-weight: 800;
+}
+.vp-doc h2 {
+  font-size: 28px;
+  font-weight: 700;
+  border-top: none;
+  padding-top: 0;
+  margin-top: 56px;
   display: flex;
-  gap: 24px;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  margin: 16px 0 24px;
+  align-items: center;
+  gap: 12px;
 }
-.profil img { width: 160px; flex: none; }
-.profil table { margin: 0; flex: 1; min-width: 240px; }
+.vp-doc h2::before {
+  content: '';
+  width: 14px;
+  height: 14px;
+  flex: none;
+  background: var(--kc-rumput);
+  box-shadow: 0 0 0 var(--kc-pixel) var(--kc-tinta);
+}
+.vp-doc h3 {
+  font-size: 21px;
+  font-weight: 700;
+}
+.vp-doc p,
+.vp-doc li {
+  font-size: 16.5px;
+  line-height: 1.75;
+}
+.vp-doc a {
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+}
+.vp-doc hr {
+  border: 0;
+  height: 6px;
+  background: repeating-linear-gradient(90deg, var(--kc-garis) 0 12px, transparent 12px 18px);
+}
 
+/* quotes look like the dialog boxes in the episodes */
+.vp-doc blockquote,
+.ucap blockquote {
+  position: relative;
+  margin: 18px 0;
+  padding: 14px 20px;
+  border: var(--kc-pixel) solid var(--kc-tinta);
+  border-radius: 4px;
+  background: var(--kc-kartu);
+  box-shadow: 5px 5px 0 var(--kc-bayang);
+  color: var(--vp-c-text-1);
+}
+.dark .vp-doc blockquote,
+.dark .ucap blockquote {
+  border-color: #070a13;
+}
+.vp-doc blockquote > p {
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--vp-c-text-1);
+  margin: 0;
+}
+
+/* tables become cards */
+.vp-doc table {
+  display: table;
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  border: var(--kc-pixel) solid var(--kc-tinta);
+  border-radius: 4px;
+  box-shadow: 5px 5px 0 var(--kc-bayang);
+  background: var(--kc-kartu);
+  overflow: hidden;
+}
+.dark .vp-doc table {
+  border-color: #070a13;
+}
+.vp-doc tr {
+  background: transparent !important;
+  border: 0;
+}
+.vp-doc th,
+.vp-doc td {
+  border: 0;
+  border-bottom: 1px solid var(--kc-garis);
+  padding: 10px 16px;
+}
+.vp-doc tr:last-child td {
+  border-bottom: 0;
+}
+.vp-doc th {
+  background: var(--kc-hijau-muda);
+  font-family: var(--kc-pixel-font);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 13px;
+  color: var(--kc-hijau-tua);
+}
+.vp-doc thead:has(th:empty) {
+  display: none;
+}
+.vp-doc td:first-child strong {
+  white-space: nowrap;
+}
+
+.vp-doc img {
+  display: block;
+  margin: 24px 0;
+  max-width: 100%;
+}
+
+/* ---------- kartu warga (ID card with pas foto) ---------- */
+.kartu-warga {
+  --aksen: var(--kc-hijau);
+  display: flex;
+  flex-direction: column;
+  border: var(--kc-pixel) solid var(--kc-tinta);
+  border-radius: 10px;
+  background: var(--kc-kartu);
+  box-shadow: 7px 7px 0 var(--kc-bayang);
+  overflow: hidden;
+  color: var(--vp-c-text-1) !important;
+  text-decoration: none !important;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.dark .kartu-warga {
+  border-color: #070a13;
+}
+a.kartu-warga:hover {
+  transform: translate(-3px, -3px);
+  box-shadow: 10px 10px 0 var(--kc-bayang);
+}
+a.kartu-warga:active {
+  transform: translate(3px, 3px);
+  box-shadow: 3px 3px 0 var(--kc-bayang);
+}
+.kw-kepala {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 14px;
+  background: var(--kc-hijau-tua);
+  color: #fffcf2;
+  font-family: var(--kc-pixel-font);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  border-bottom: var(--kc-pixel) solid var(--kc-tinta);
+}
+.dark .kw-kepala {
+  background: #2f6b2a;
+  border-bottom-color: #070a13;
+}
+.kw-kepala img {
+  margin: 0 !important;
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+}
+.kw-kampung {
+  margin-left: auto;
+  opacity: 0.8;
+}
+.kw-isi {
+  display: grid;
+  grid-template-columns: 132px 1fr;
+  gap: 16px;
+  padding: 16px;
+  background:
+    linear-gradient(90deg, transparent 0 calc(100% - 6px), var(--aksen) calc(100% - 6px));
+}
+.kw-foto {
+  width: 132px;
+  aspect-ratio: 1;
+  border: var(--kc-pixel) solid var(--kc-tinta);
+  border-radius: 4px;
+  overflow: hidden;
+  background: #ddc9a0;
+}
+.dark .kw-foto {
+  border-color: #070a13;
+}
+.kw-foto img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin: 0 !important;
+  border: 0 !important;
+  box-shadow: none !important;
+}
+.kw-data {
+  margin: 0;
+  display: grid;
+  gap: 4px;
+  align-content: center;
+}
+.kw-data div {
+  display: grid;
+  grid-template-columns: 78px 1fr;
+  gap: 8px;
+  font-size: 14px;
+  line-height: 1.4;
+}
+.kw-data dt {
+  color: var(--kc-redup);
+  font-family: var(--kc-pixel-font);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding-top: 2px;
+}
+.kw-data dd {
+  margin: 0;
+  font-weight: 700;
+}
+.kw-ucapan {
+  margin: 0 16px 14px !important;
+  padding: 10px 14px;
+  font-size: 14.5px !important;
+  line-height: 1.5 !important;
+  font-weight: 700;
+  border: 2px dashed var(--kc-garis);
+  border-radius: 4px;
+}
+.kw-lihat {
+  margin-top: auto;
+  padding: 10px 16px;
+  border-top: 2px solid var(--kc-garis);
+  font-weight: 800;
+  font-size: 14px;
+  color: var(--kc-hijau-tua);
+}
+.kartu-warga.besar {
+  max-width: 560px;
+  margin: 24px 0 8px;
+}
+.kartu-warga.besar .kw-isi {
+  grid-template-columns: 168px 1fr;
+}
+.kartu-warga.besar .kw-foto {
+  width: 168px;
+}
+
+.grid-warga {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 340px), 1fr));
+  gap: 28px;
+  margin: 28px 0;
+}
+
+@media (max-width: 480px) {
+  .kw-isi,
+  .kartu-warga.besar .kw-isi {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: left;
+  }
+  .kw-foto,
+  .kartu-warga.besar .kw-foto {
+    width: 160px;
+  }
+  .kw-data {
+    width: 100%;
+  }
+  .kw-kampung {
+    display: none;
+  }
+}
+
+/* ---------- ucap (speech bubble with name tag) ---------- */
+.ucap {
+  margin: 22px 0;
+}
+.ucap figcaption {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: 14px;
+  margin-bottom: -6px;
+  position: relative;
+  z-index: 1;
+  padding: 3px 10px 3px 4px;
+  background: var(--kc-hijau);
+  color: #fffcf2;
+  font-family: var(--kc-pixel-font);
+  font-size: 13px;
+  font-weight: 600;
+  border: 2px solid var(--kc-tinta);
+  border-radius: 3px;
+}
+.dark .ucap figcaption {
+  background: #2f6b2a;
+  border-color: #070a13;
+}
+.ucap figcaption img {
+  width: 22px;
+  height: 22px;
+  border-radius: 2px;
+  margin: 0 !important;
+  border: 0 !important;
+  box-shadow: none !important;
+}
+.ucap blockquote {
+  margin: 0;
+  padding-top: 16px;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1.55;
+}
+.ucap blockquote p {
+  margin: 0;
+}
+.ucap-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 260px), 1fr));
+  gap: 4px 20px;
+}
+
+/* ---------- expressions ---------- */
 .ekspresi {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
-  gap: 12px;
-  margin: 16px 0;
+  grid-template-columns: repeat(auto-fill, minmax(118px, 1fr));
+  gap: 18px;
+  margin: 24px 0;
 }
-.ekspresi figure { margin: 0; text-align: center; font-size: 13px; color: var(--vp-c-text-2); }
-.ekspresi img { width: 100%; image-rendering: pixelated; }
+.ekspresi figure {
+  margin: 0;
+  text-align: center;
+  font-family: var(--kc-pixel-font);
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--vp-c-text-2);
+}
+.vp-doc .ekspresi img {
+  display: block;
+  width: 100%;
+  margin: 0 0 10px;
+  background: #ddc9a0;
+  border: var(--kc-pixel) solid var(--kc-tinta);
+  border-radius: 4px;
+  box-shadow: 4px 4px 0 var(--kc-bayang);
+}
 
-.episode-grid {
+/* ---------- episode cards ---------- */
+.grid-episode {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 12px;
-  margin: 16px 0;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 220px), 1fr));
+  gap: 24px;
+  margin: 28px 0;
 }
-.episode-grid img { width: 100%; border-radius: 8px; }
+.episode-kartu {
+  display: block;
+  border: var(--kc-pixel) solid var(--kc-tinta);
+  border-radius: 10px;
+  overflow: hidden;
+  background: var(--kc-kartu);
+  box-shadow: 6px 6px 0 var(--kc-bayang);
+  color: var(--vp-c-text-1) !important;
+  text-decoration: none !important;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.dark .episode-kartu {
+  border-color: #070a13;
+}
+.episode-kartu:hover {
+  transform: translate(-3px, -3px);
+  box-shadow: 9px 9px 0 var(--kc-bayang);
+}
+.ek-gambar {
+  position: relative;
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  border-bottom: var(--kc-pixel) solid var(--kc-tinta);
+}
+.ek-gambar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 40%;
+  margin: 0 !important;
+  border: 0 !important;
+  box-shadow: none !important;
+}
+.ek-no {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-family: var(--kc-pixel-font);
+  font-weight: 700;
+  font-size: 14px;
+  color: #fffcf2;
+  background: var(--kc-genteng);
+  border: 2px solid #2a1a10;
+  padding: 1px 8px;
+  border-radius: 3px;
+}
+.ek-main {
+  position: absolute;
+  inset: auto 10px 10px auto;
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  font-size: 16px;
+  color: #2a1a10;
+  background: #fffcf2;
+  border: 2px solid #2a1a10;
+  border-radius: 50%;
+}
+.ek-teks {
+  padding: 12px 14px 14px;
+}
+.ek-teks strong {
+  display: block;
+  font-family: var(--kc-display);
+  font-size: 19px;
+  line-height: 1.25;
+}
+.ek-teks span {
+  font-size: 13.5px;
+  color: var(--vp-c-text-2);
+}
+
+/* ---------- beranda ---------- */
+.beranda {
+  max-width: 1152px;
+  margin: 0 auto;
+  padding: 0 24px 96px;
+}
+.b-hero {
+  display: grid;
+  grid-template-columns: 1.05fr 1fr;
+  gap: 40px;
+  align-items: center;
+  padding: 56px 0 40px;
+}
+.b-hero h1 {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin: 18px 0 8px;
+  font-family: var(--kc-display);
+  font-size: clamp(40px, 6vw, 66px);
+  font-weight: 800;
+  line-height: 1.02;
+  letter-spacing: -0.03em;
+  color: var(--vp-c-text-1);
+}
+.b-hero h1 img {
+  width: clamp(52px, 7vw, 76px);
+  border-radius: 18%;
+  border: var(--kc-pixel) solid var(--kc-tinta);
+  box-shadow: 4px 4px 0 var(--kc-bayang);
+  flex: none;
+}
+.b-tagline {
+  font-family: var(--kc-display);
+  font-style: italic;
+  font-size: clamp(20px, 2.6vw, 26px);
+  color: var(--kc-hijau-tua);
+  margin: 0 0 14px;
+}
+.b-lede {
+  font-size: 18px;
+  line-height: 1.65;
+  color: var(--vp-c-text-2);
+  max-width: 480px;
+  margin: 0;
+}
+.b-aksi {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 28px;
+}
+.tombol {
+  display: inline-block;
+  padding: 11px 20px;
+  font-weight: 800;
+  font-size: 15.5px;
+  color: var(--kc-tinta);
+  background: var(--kc-kartu);
+  border: var(--kc-pixel) solid var(--kc-tinta);
+  border-radius: 6px;
+  box-shadow: 4px 4px 0 var(--kc-bayang);
+  text-decoration: none;
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+.tombol.utama {
+  color: #fffcf2;
+  background: var(--kc-hijau-tua);
+}
+.dark .tombol {
+  border-color: #070a13;
+}
+.dark .tombol.utama {
+  background: #2f6b2a;
+}
+.tombol:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0 var(--kc-bayang);
+}
+.tombol:active {
+  transform: translate(3px, 3px);
+  box-shadow: 1px 1px 0 var(--kc-bayang);
+}
+
+/* the stage: a slice of the village */
+.b-panggung {
+  position: relative;
+  aspect-ratio: 5 / 4;
+  border: var(--kc-pixel) solid var(--kc-tinta);
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 8px 8px 0 var(--kc-bayang);
+  background: linear-gradient(#bfe1ee, #e8f3ea 62%);
+}
+.dark .b-panggung {
+  border-color: #070a13;
+  background: linear-gradient(#1b2445, #2b3b62 62%);
+}
+.b-langit .awan {
+  position: absolute;
+  height: 18px;
+  background: #fffcf2;
+  box-shadow: 10px -10px 0 #fffcf2, 30px 0 0 #fffcf2;
+  opacity: 0.9;
+  animation: awan 38s linear infinite;
+}
+.dark .b-langit .awan {
+  background: #3a4770;
+  box-shadow: 10px -10px 0 #3a4770, 30px 0 0 #3a4770;
+}
+.awan.a1 { width: 60px; top: 14%; left: -20%; }
+.awan.a2 { width: 44px; top: 26%; left: -20%; animation-delay: -19s; animation-duration: 46s; }
+@keyframes awan {
+  to { transform: translateX(160vw); }
+}
+.b-tanah {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 30%;
+  background:
+    repeating-linear-gradient(90deg, rgba(42, 26, 16, 0.06) 0 8px, transparent 8px 16px),
+    linear-gradient(#6fb352 0 10px, #5ea044 10px);
+  border-top: var(--kc-pixel) solid #3c6e2c;
+}
+.dark .b-tanah {
+  background:
+    repeating-linear-gradient(90deg, rgba(0, 0, 0, 0.12) 0 8px, transparent 8px 16px),
+    linear-gradient(#3c6e2c 0 10px, #2f5a24 10px);
+}
+.b-panggung img {
+  position: absolute;
+  image-rendering: pixelated;
+}
+.b-pohon { bottom: 24%; width: 17%; z-index: 1; }
+.b-pohon.p1 { left: 1%; bottom: 22%; width: 11%; z-index: 0; }
+.b-pohon.p2 { right: 1%; width: 9%; bottom: 23%; z-index: 0; }
+.b-atap { left: 50%; transform: translateX(-50%); bottom: 19%; width: 30%; z-index: 1; }
+.b-tokoh { bottom: 6%; height: 64%; z-index: 2; }
+.b-tokoh.t1 { left: 8%; }
+.b-tokoh.t2 { right: 6%; }
+.b-ayam {
+  bottom: 7%;
+  width: 6%;
+  z-index: 3;
+  left: 44%;
+  animation: ayam 9s steps(18) infinite alternate;
+}
+@keyframes ayam {
+  from { transform: translateX(-120%); }
+  to { transform: translateX(120%) scaleX(-1); }
+}
+
+.b-bagian {
+  margin-top: 72px;
+}
+.b-bagian header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 14px;
+}
+.b-bagian h2 {
+  width: 100%;
+  margin: 10px 0 0;
+  font-family: var(--kc-display);
+  font-size: clamp(28px, 3.6vw, 38px);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+.b-bagian header .chip { order: -1; }
+.b-semua {
+  margin-left: auto;
+  font-weight: 800;
+  color: var(--kc-hijau-tua);
+}
+.b-bagian header:has(.b-semua) h2 {
+  width: auto;
+  flex: 1;
+}
+.grid-jelajah {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr));
+  gap: 28px;
+  margin-top: 28px;
+}
+.ubin {
+  display: flex;
+  flex-direction: column;
+  border: var(--kc-pixel) solid var(--kc-tinta);
+  border-radius: 10px;
+  overflow: hidden;
+  background: var(--kc-kartu);
+  box-shadow: 6px 6px 0 var(--kc-bayang);
+  color: var(--vp-c-text-1);
+  text-decoration: none;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.dark .ubin {
+  border-color: #070a13;
+}
+.ubin:hover {
+  transform: translate(-3px, -3px);
+  box-shadow: 9px 9px 0 var(--kc-bayang);
+}
+.ubin img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-bottom: var(--kc-pixel) solid var(--kc-tinta);
+  image-rendering: pixelated;
+}
+.ubin strong {
+  padding: 14px 16px 2px;
+  font-family: var(--kc-display);
+  font-size: 21px;
+}
+.ubin span {
+  padding: 0 16px 16px;
+  color: var(--vp-c-text-2);
+  font-size: 15px;
+}
+
+@media (max-width: 860px) {
+  .b-hero {
+    grid-template-columns: 1fr;
+    padding-top: 32px;
+  }
+  .beranda {
+    padding: 0 16px 72px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .b-ayam,
+  .b-langit .awan {
+    animation: none;
+  }
+  .kartu-warga,
+  .episode-kartu,
+  .ubin,
+  .tombol {
+    transition: none;
+  }
+}
+
+/* footer */
+.VPFooter {
+  border-top: var(--kc-pixel) solid var(--kc-garis) !important;
+  background: var(--vp-c-bg-alt) !important;
+}
+.VPFooter .message {
+  font-family: var(--kc-display);
+  font-style: italic;
+  font-size: 16px;
+}
+
+/* vertical episode stills inside an episode section */
+.vp-doc img.adegan {
+  width: min(100%, 300px);
+}

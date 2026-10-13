@@ -9,7 +9,7 @@ Kantor Pak Lurah dan bangunan pertama yang ia dirikan ("kantor dulu, biar keliha
 Di sini ada meja kerja penuh surat dan stempel, kursi yang bunyi, papan pengumuman, dan teras.
 Lampunya jarang dimatikan. Wifi-nya menumpang ke warung Bang Hos.
 
-![Papan pengumuman balai](/karakter/pak-lurah/scene-papan@4x.png)
+![Balai desa di Kampung Cianj.AI](/episode/warga-kedua-adegan.jpg){.adegan}
 
 ## Warung Madura
 
@@ -39,11 +39,7 @@ satu pekerjaan selesai.
 
 ## Surau
 
-Dijaga [Pak Marbot](/karakter/warga-lain#pak-marbot). Tempat warga berkumpul saat waktu shalat.
-
-## Kebun hidroponik
-
-Kebun [Wa Handa](/karakter/warga-lain#wa-handa).
+Tempat warga berkumpul saat waktu shalat.
 
 ## Jalan desa
 
