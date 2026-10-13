@@ -32,9 +32,9 @@ import { warga, badan } from '../warga'
         <div class="b-langit"><span class="awan a1" /><span class="awan a2" /></div>
         <img class="b-pohon p1" :src="withBase('/sprite/pohon.png')" alt="" />
         <img class="b-pohon p2" :src="withBase('/sprite/pohon.png')" alt="" />
-        <img class="b-atap" :src="withBase('/sprite/atap-balai.png')" alt="" />
         <img class="b-tokoh t1" :src="withBase(badan('pak-lurah'))" alt="" />
         <img class="b-tokoh t2" :src="withBase(badan('bang-hos'))" alt="" />
+        <img class="b-tokoh t3" :src="withBase(badan('mang-enjen'))" alt="" />
         <img class="b-ayam" :src="withBase('/sprite/ayam-putih.png')" alt="" />
         <div class="b-tanah" />
       </div>

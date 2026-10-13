@@ -52,4 +52,5 @@ kertas, dan kopi yang keburu dingin. Wifi balai pun masih menumpang ke warung.
 <div class="grid-warga">
   <KartuWarga slug="pak-lurah" />
   <KartuWarga slug="bang-hos" />
+  <KartuWarga slug="mang-enjen" />
 </div>

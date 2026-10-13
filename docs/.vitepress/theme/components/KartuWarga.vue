@@ -27,7 +27,7 @@ const w = cari(props.slug)
         <div><dt>Nama</dt><dd>{{ w.nama }}</dd></div>
         <div><dt>Dipanggil</dt><dd>{{ w.panggilan }}</dd></div>
         <div><dt>Umur</dt><dd>{{ w.umur }} tahun</dd></div>
-        <div><dt>Asal</dt><dd>{{ w.asal }}</dd></div>
+        <div v-if="w.asal"><dt>Asal</dt><dd>{{ w.asal }}</dd></div>
         <div><dt>Pekerjaan</dt><dd>{{ w.pekerjaan }}</dd></div>
         <div v-if="besar"><dt>Tempat</dt><dd>{{ w.tempat }}</dd></div>
       </dl>

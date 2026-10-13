@@ -37,9 +37,10 @@ Hamparan sawah hijau dan sungai yang membelah kampung, dengan jembatan kayu. Tem
 keliling sore ("Wah, sawahnya ijo 🌾") dan tempat warga petani bekerja. Panen di sini berarti
 satu pekerjaan selesai.
 
-## Surau
+## Musholla
 
-Tempat warga berkumpul saat waktu shalat.
+Tempat warga berkumpul saat waktu shalat. Dijaga [Mang Enjen](/karakter/mang-enjen), yang
+sekaligus mengurus toanya.
 
 ## Jalan desa
 

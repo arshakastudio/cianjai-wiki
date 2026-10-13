@@ -726,10 +726,10 @@ a.kartu-warga:active {
 .b-pohon { bottom: 24%; width: 17%; z-index: 1; }
 .b-pohon.p1 { left: 1%; bottom: 22%; width: 11%; z-index: 0; }
 .b-pohon.p2 { right: 1%; width: 9%; bottom: 23%; z-index: 0; }
-.b-atap { left: 50%; transform: translateX(-50%); bottom: 19%; width: 30%; z-index: 1; }
 .b-tokoh { bottom: 6%; height: 64%; z-index: 2; }
-.b-tokoh.t1 { left: 8%; }
-.b-tokoh.t2 { right: 6%; }
+.b-tokoh.t1 { left: 7%; }
+.b-tokoh.t2 { right: 7%; }
+.b-tokoh.t3 { left: 50%; transform: translateX(-35%); bottom: 4%; height: 58%; z-index: 2; }
 .b-ayam {
   bottom: 7%;
   width: 6%;
