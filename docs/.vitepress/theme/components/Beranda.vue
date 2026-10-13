@@ -2,6 +2,8 @@
 import { withBase } from 'vitepress'
 import KartuWarga from './KartuWarga.vue'
 import EpisodeKartu from './EpisodeKartu.vue'
+import KartuSegera from './KartuSegera.vue'
+import TombolMusik from './TombolMusik.vue'
 import { warga, badan } from '../warga'
 </script>
 
@@ -25,6 +27,7 @@ import { warga, badan } from '../warga'
         </div>
       </div>
 
+      <div class="b-panggung-bungkus">
       <div class="b-panggung" aria-hidden="true">
         <div class="b-langit"><span class="awan a1" /><span class="awan a2" /></div>
         <img class="b-pohon p1" :src="withBase('/sprite/pohon.png')" alt="" />
@@ -35,6 +38,8 @@ import { warga, badan } from '../warga'
         <img class="b-ayam" :src="withBase('/sprite/ayam-putih.png')" alt="" />
         <div class="b-tanah" />
       </div>
+      <TombolMusik besar />
+      </div>
     </section>
 
     <section class="b-bagian">
@@ -44,6 +49,7 @@ import { warga, badan } from '../warga'
       </header>
       <div class="grid-warga">
         <KartuWarga v-for="w in warga" :key="w.slug" :slug="w.slug" />
+        <KartuSegera />
       </div>
     </section>
 

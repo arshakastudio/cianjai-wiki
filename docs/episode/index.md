@@ -42,12 +42,3 @@ Pertanyaan terakhir, penting pisan: kamu bukan ayam, kan?
 > "Staf: satu. Laporan: 48. Kok malah nambah?"
 
 **Pertama kali:** warga kedua, staf pertama Pak Lurah.
-
-## Lelucon berulang
-
-| | Ep 1 | Ep 2 |
-|---|---|---|
-| Laporan Pak Lurah | 47 | 48 |
-| Staf | 0 | 1 |
-| Status ayam | resign | masih jadi syarat ("bukan ayam") |
-| Bangunan | balai | balai |

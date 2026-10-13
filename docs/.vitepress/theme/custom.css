@@ -409,7 +409,7 @@ a.kartu-warga:active {
 
 .grid-warga {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(min(100%, 340px), 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 420px), 1fr));
   gap: 28px;
   margin: 28px 0;
 }
@@ -849,4 +849,128 @@ a.kartu-warga:active {
 /* vertical episode stills inside an episode section */
 .vp-doc img.adegan {
   width: min(100%, 300px);
+}
+
+/* ---------- musik ---------- */
+.tombol-musik {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: 12px;
+  padding: 4px 12px 4px 8px;
+  font-weight: 800;
+  font-size: 13.5px;
+  color: var(--kc-tinta);
+  background: var(--kc-kartu);
+  border: 2px solid var(--kc-tinta);
+  border-radius: 6px;
+  box-shadow: 3px 3px 0 var(--kc-bayang);
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+.dark .tombol-musik {
+  border-color: #070a13;
+}
+.tombol-musik:hover {
+  transform: translate(-1px, -1px);
+  box-shadow: 4px 4px 0 var(--kc-bayang);
+}
+.tombol-musik:active {
+  transform: translate(2px, 2px);
+  box-shadow: 1px 1px 0 var(--kc-bayang);
+}
+.tombol-musik.nyala {
+  color: #fffcf2;
+  background: var(--kc-hijau-tua);
+}
+.dark .tombol-musik.nyala {
+  background: #2f6b2a;
+}
+.tm-ikon {
+  display: grid;
+  place-items: center;
+  width: 18px;
+  height: 18px;
+  font-size: 16px;
+  line-height: 1;
+}
+.tm-bar {
+  display: flex;
+  align-items: flex-end;
+  gap: 2px;
+  height: 14px;
+}
+.tm-bar i {
+  width: 3px;
+  background: currentColor;
+  animation: tm-bar 0.9s steps(4) infinite alternate;
+}
+.tm-bar i:nth-child(2) { animation-delay: -0.3s; }
+.tm-bar i:nth-child(3) { animation-delay: -0.6s; }
+@keyframes tm-bar {
+  from { height: 4px; }
+  to { height: 14px; }
+}
+@media (max-width: 767px) {
+  .VPNavBar .tombol-musik:not(.besar) .tm-teks {
+    display: none;
+  }
+  .VPNavBar .tombol-musik:not(.besar) {
+    padding: 4px 6px;
+    margin-left: 4px;
+  }
+}
+.b-panggung-bungkus {
+  position: relative;
+}
+.tombol-musik.besar {
+  position: absolute;
+  right: 16px;
+  top: 16px;
+  margin: 0;
+  z-index: 5;
+  padding: 7px 14px 7px 10px;
+  font-size: 14px;
+}
+@media (prefers-reduced-motion: reduce) {
+  .tm-bar i {
+    animation: none;
+    height: 10px;
+  }
+}
+
+/* ---------- kartu "segera datang" ---------- */
+.kartu-warga.segera {
+  --aksen: transparent;
+  border-style: dashed;
+  box-shadow: none;
+  background: transparent;
+}
+.kartu-warga.segera .kw-kepala {
+  background: var(--kc-redup);
+}
+.kw-kosong {
+  display: grid;
+  place-items: center;
+  background: repeating-linear-gradient(45deg, #ddc9a0 0 8px, #d3bd90 8px 16px);
+}
+.kw-kosong span {
+  font-family: var(--kc-pixel-font);
+  font-size: 56px;
+  font-weight: 700;
+  color: #7a6a55;
+}
+.ks-teks {
+  display: grid;
+  align-content: center;
+  gap: 6px;
+}
+.ks-teks strong {
+  font-family: var(--kc-display);
+  font-size: 20px;
+  line-height: 1.2;
+}
+.ks-teks span {
+  font-size: 14.5px;
+  line-height: 1.5;
+  color: var(--vp-c-text-2);
 }

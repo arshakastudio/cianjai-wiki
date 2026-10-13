@@ -45,8 +45,7 @@ kertas, dan kopi yang keburu dingin. Wifi balai pun masih menumpang ke warung.
 - Bahasa Indonesia santai, kalimat pendek, hangat dan jenaka.
 - Bahasa Sunda hanya sebagai bumbu: satu-dua kata seperti *atuh*, *pisan*, *euy*, *mah*.
 - Ceritanya bukan iklan. Tidak ada yang menyindir atau merendahkan orang lain.
-- Tiap episode bisa ditonton sendiri, meski ada lelucon yang berulang (ayam, laporan yang
-  terus bertambah).
+- Tiap episode bisa ditonton sendiri, tapi kalau ditonton berurutan, ceritanya menyambung.
 
 ## Siapa saja di sini
 
