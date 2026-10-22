@@ -14,6 +14,7 @@ kalau ditonton berurutan, kampungnya terlihat tumbuh.
   <EpisodeKartu :no="7" judul="Sekdes Pertama" gambar="/episode/sekdes-pertama-sampul.jpg" tayang="19 Okt 2026" durasi="39 dtk" href="https://www.instagram.com/reel/DerIDSbD6rp/" />
   <EpisodeKartu :no="8" judul="Tukang Ketik" gambar="/episode/warga-ketiga-sampul.jpg" tayang="20 Okt 2026" durasi="40 dtk" href="https://www.instagram.com/reel/DetCE9sDXm7/" />
   <EpisodeKartu :no="9" judul="Sepuluh Jari" gambar="/episode/tukang-ketik-sampul.jpg" tayang="21 Okt 2026" durasi="42 dtk" href="https://www.instagram.com/reel/DevzeTBjtSq/" />
+  <EpisodeKartu :no="10" judul="Pokoknya Ada" gambar="/episode/sk-nyusul-sampul.jpg" tayang="22 Okt 2026" durasi="45 dtk" href="https://www.instagram.com/reel/Deyh6kqCGrJ/" />
 </div>
 
 ## Episode 1 · Warga Pertama
@@ -147,3 +148,17 @@ Lowongan sudah menempel sehari dan yang melamar baru angin. Lalu datang pelamar 
 > "Dua jempol. Kerja kamu mantap."
 
 **Pertama kali:** Warga ketiga datang · pos pertama berdiri.
+
+## Episode 10 · Pokoknya Ada
+
+![Pak Lurah dan Pak Sekdes berdiri di balai, Pak Lurah sedang bicara](/episode/sk-nyusul-adegan.jpg){.adegan}
+
+**Tayang:** 22 Oktober 2026 · ±45 detik · [Tonton di Instagram](https://www.instagram.com/reel/Deyh6kqCGrJ/)
+
+Siang di balai, Pak Lurah bilang SK Pak Sekdes sudah jadi dan langsung dikirim lewat WA. Yang masuk malah "Surat Undangan.apk", jadi Pak Sekdes curiga itu link penipuan. Pak Lurah mengaku salah kirim dan mau minta ulang ke tukang ketik. Ditanya apa SK-nya benar-benar ada, jawabnya cuma satu. Soal gaji, Pak Lurah menyuruh kerja dulu. Lalu Pak Sekdes bertanya soal kas kampung.
+
+> "Pokoknya ada."
+
+> "Nolnya udah ada enam."
+
+**Pertama kali:** Kas kampung ikut dibahas.
