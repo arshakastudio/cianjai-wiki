@@ -3,11 +3,11 @@
 export interface Warga {
   slug: string
   panggilan: string
-  nama: string
-  umur: number
+  nama?: string
+  umur?: number
   asal?: string
   pekerjaan: string
-  tempat: string
+  tempat?: string
   ucapan: string
   aksen: string
 }
@@ -45,9 +45,22 @@ export const warga: Warga[] = [
     ucapan: 'Bilangnya jaga musholla. Sebenarnya jaga toa',
     aksen: '#3f8a4f',
   },
+  {
+    // Belum punya lembar karakter: nama lengkap, umur, asal, dan tempat belum ada di sumber mana pun, jadi tidak ditulis.
+    slug: 'pak-sekdes',
+    panggilan: 'Pak Sekdes',
+    pekerjaan: 'Sekretaris desa (sekdes)',
+    ucapan: 'Rakyatnya kan saya juga, Pak',
+    aksen: '#8b7f5a',
+  },
 ]
 
-const aset: Record<string, string> = { 'pak-lurah': 'pak-lurah', 'bang-hos': 'hosnan-mawardi', 'mang-enjen': 'mang-enjen' }
+const aset: Record<string, string> = {
+  'pak-lurah': 'pak-lurah',
+  'bang-hos': 'hosnan-mawardi',
+  'mang-enjen': 'mang-enjen',
+  'pak-sekdes': 'pak-sekdes',
+}
 
 export const pasFoto = (slug: string) => `/karakter/${aset[slug]}/pas-foto.png`
 export const badan = (slug: string) => `/karakter/${aset[slug]}/full@4x.png`

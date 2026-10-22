@@ -39,6 +39,7 @@ export default defineConfig({
         { text: 'Pak Lurah', link: '/karakter/pak-lurah' },
         { text: 'Bang Hos', link: '/karakter/bang-hos' },
         { text: 'Mang Enjen', link: '/karakter/mang-enjen' },
+        { text: 'Pak Sekdes', link: '/karakter/pak-sekdes' },
       ] },
       { text: 'Episode', items: [
         { text: 'Daftar episode', link: '/episode/' },

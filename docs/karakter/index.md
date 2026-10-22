@@ -6,4 +6,5 @@ Warga tetap Kampung Cianj.AI yang sudah punya wajah dan cerita. Klik kartunya un
   <KartuWarga slug="pak-lurah" />
   <KartuWarga slug="bang-hos" />
   <KartuWarga slug="mang-enjen" />
+  <KartuWarga slug="pak-sekdes" />
 </div>
