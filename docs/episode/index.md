@@ -15,6 +15,7 @@ kalau ditonton berurutan, kampungnya terlihat tumbuh.
   <EpisodeKartu :no="8" judul="Tukang Ketik" gambar="/episode/warga-ketiga-sampul.jpg" tayang="20 Okt 2026" durasi="40 dtk" href="https://www.instagram.com/reel/DetCE9sDXm7/" />
   <EpisodeKartu :no="9" judul="Sepuluh Jari" gambar="/episode/tukang-ketik-sampul.jpg" tayang="21 Okt 2026" durasi="42 dtk" href="https://www.instagram.com/reel/DevzeTBjtSq/" />
   <EpisodeKartu :no="10" judul="Pokoknya Ada" gambar="/episode/sk-nyusul-sampul.jpg" tayang="22 Okt 2026" durasi="45 dtk" href="https://www.instagram.com/reel/Deyh6kqCGrJ/" />
+  <EpisodeKartu :no="11" judul="Gaji Pertama" gambar="/episode/gaji-pertama-sampul.jpg" tayang="23 Okt 2026" durasi="38 dtk" href="https://www.instagram.com/reel/De0xRUNFOte/" />
 </div>
 
 ## Episode 1 · Warga Pertama
@@ -162,3 +163,17 @@ Siang di balai, Pak Lurah bilang SK Pak Sekdes sudah jadi dan langsung dikirim l
 > "Nolnya udah ada enam."
 
 **Pertama kali:** Kas kampung ikut dibahas.
+
+## Episode 11 · Gaji Pertama
+
+![Pak Lurah dan Pak Sekdes berdiri di balai, Pak Lurah menjawab soal rendang](/episode/gaji-pertama-adegan.jpg){.adegan}
+
+**Tayang:** 23 Oktober 2026 · ±38 detik · [Tonton di Instagram](https://www.instagram.com/reel/De0xRUNFOte/)
+
+Siang di balai, Pak Lurah datang dari warung membawa bungkusan dan bilang itu gaji pertama Pak Sekdes. Pak Sekdes heran kenapa bentuknya bungkusan, bukan transfer, dan Pak Lurah menjawab kas masih nol semua, jadi gajinya berbentuk barang. Pak Sekdes sempat khawatir isinya lengkoas lagi, lalu bungkusan dibuka dan isinya ternyata rendang beneran. Ia pun penasaran rendang itu dibeli pakai apa.
+
+> "Kalau isinya lengkoas lagi, saya resign kayak ayam."
+
+> "Abis ngutang di warung Bang Hos."
+
+**Pertama kali:** Gaji pertama di kampung.
