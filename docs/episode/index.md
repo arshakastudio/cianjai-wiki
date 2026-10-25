@@ -16,6 +16,7 @@ kalau ditonton berurutan, kampungnya terlihat tumbuh.
   <EpisodeKartu :no="9" judul="Sepuluh Jari" gambar="/episode/tukang-ketik-sampul.jpg" tayang="21 Okt 2026" durasi="42 dtk" href="https://www.instagram.com/reel/DevzeTBjtSq/" />
   <EpisodeKartu :no="10" judul="Pokoknya Ada" gambar="/episode/sk-nyusul-sampul.jpg" tayang="22 Okt 2026" durasi="45 dtk" href="https://www.instagram.com/reel/Deyh6kqCGrJ/" />
   <EpisodeKartu :no="11" judul="Gaji Pertama" gambar="/episode/gaji-pertama-sampul.jpg" tayang="23 Okt 2026" durasi="38 dtk" href="https://www.instagram.com/reel/De0xRUNFOte/" />
+  <EpisodeKartu :no="12" judul="Bendahara" gambar="/episode/kas-kampung-sampul.jpg" tayang="25 Okt 2026" durasi="38 dtk" href="https://www.instagram.com/reel/De6H7ksgc_C/" />
 </div>
 
 ## Episode 1 · Warga Pertama
@@ -177,3 +178,17 @@ Siang di balai, Pak Lurah datang dari warung membawa bungkusan dan bilang itu ga
 > "Abis ngutang di warung Bang Hos."
 
 **Pertama kali:** Gaji pertama di kampung.
+
+## Episode 12 · Bendahara
+
+![Pak Lurah menjawab dari balai soal rendang gaji Pak Sekdes](/episode/kas-kampung-adegan.jpg){.adegan}
+
+**Tayang:** 25 Oktober 2026 · ±38 detik · [Tonton di Instagram](https://www.instagram.com/reel/De6H7ksgc_C/)
+
+Sore di balai, Pak Lurah menyerahkan kas kampung ke Pak Sekdes yang mulai hari itu rangkap jadi bendahara. Pak Sekdes siap dan langsung tanya isi kasnya, dan jawabannya masih soal nol yang sudah ada enam. Lalu Bang Hos datang dari warung tanpa bicara, dengan tanda "!" di atas kepalanya dan tulisan "TAGIHAN!". Pak Lurah bilang itu urusan bendahara sekarang, dan Pak Sekdes pun bertanya apa yang ditagih.
+
+> "Nolnya udah ada enam. Depannya kamu yang isi."
+
+> "Rendang gaji kamu kemarin."
+
+**Pertama kali:** Bendahara pertama, Pak Sekdes rangkap jabatan pegang kas kampung.
