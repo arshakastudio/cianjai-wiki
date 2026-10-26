@@ -17,6 +17,7 @@ kalau ditonton berurutan, kampungnya terlihat tumbuh.
   <EpisodeKartu :no="10" judul="Pokoknya Ada" gambar="/episode/sk-nyusul-sampul.jpg" tayang="22 Okt 2026" durasi="45 dtk" href="https://www.instagram.com/reel/Deyh6kqCGrJ/" />
   <EpisodeKartu :no="11" judul="Gaji Pertama" gambar="/episode/gaji-pertama-sampul.jpg" tayang="23 Okt 2026" durasi="38 dtk" href="https://www.instagram.com/reel/De0xRUNFOte/" />
   <EpisodeKartu :no="12" judul="Bendahara" gambar="/episode/kas-kampung-sampul.jpg" tayang="25 Okt 2026" durasi="38 dtk" href="https://www.instagram.com/reel/De6H7ksgc_C/" />
+  <EpisodeKartu :no="13" judul="Pemasukan Pertama" gambar="/episode/pemasukan-pertama-sampul.jpg" tayang="26 Okt 2026" durasi="38 dtk" href="https://www.instagram.com/reel/De8fV1-Gxmd/" />
 </div>
 
 ## Episode 1 · Warga Pertama
@@ -192,3 +193,17 @@ Sore di balai, Pak Lurah menyerahkan kas kampung ke Pak Sekdes yang mulai hari i
 > "Rendang gaji kamu kemarin."
 
 **Pertama kali:** Bendahara pertama, Pak Sekdes rangkap jabatan pegang kas kampung.
+
+## Episode 13 · Pemasukan Pertama
+
+![Pak Lurah dan Pak Sekdes di balai, Pak Lurah sedang bicara](/episode/pemasukan-pertama-adegan.jpg){.adegan}
+
+**Tayang:** 26 Oktober 2026 · ±38 detik · [Tonton di Instagram](https://www.instagram.com/reel/De8fV1-Gxmd/)
+
+Pagi di balai, Pak Sekdes melapor bahwa kas kampung akhirnya ada isinya: iuran warung Bang Hos, pemasukan pertama. Lalu Bang Hos datang lagi dari warung, tanpa bicara, dengan tanda "!" di atas kepalanya dan tulisan "TAGIHAN!". Pak Lurah menebak itu soal rendang kemarin, dan Pak Sekdes membayarnya dari kas. Tulisan "LUNAS!" muncul, Bang Hos pulang ke warung, dan kas kembali ke angka nol.
+
+> "Kasnya nol lagi, Pak. Uangnya balik ke Bang Hos."
+
+> "Itu namanya perputaran ekonomi, Des."
+
+**Pertama kali:** Pemasukan pertama kas kampung, dari iuran warung Bang Hos.
