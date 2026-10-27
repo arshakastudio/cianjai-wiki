@@ -33,6 +33,7 @@ export default defineConfig({
       { text: 'Kampung', items: [
         { text: 'Tentang Kampung', link: '/tentang' },
         { text: 'Tempat', link: '/tempat' },
+        { text: 'Disclaimer', link: '/disclaimer' },
       ] },
       { text: 'Karakter', items: [
         { text: 'Semua karakter', link: '/karakter/' },
@@ -53,6 +54,9 @@ export default defineConfig({
     returnToTopLabel: 'Ke atas',
     sidebarMenuLabel: 'Menu',
     darkModeSwitchLabel: 'Tema',
-    footer: { message: 'Kampung kecil, mimpinya sedunia 🌏' },
+    footer: {
+      message: 'Kampung kecil, mimpinya sedunia 🌏',
+      copyright: 'Cerita fiksi — kesamaan nama dengan siapa pun hanya kebetulan. <a href="/disclaimer">Disclaimer</a>',
+    },
   },
 })

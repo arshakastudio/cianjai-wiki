@@ -8,3 +8,5 @@ Warga tetap Kampung Cianj.AI yang sudah punya wajah dan cerita. Klik kartunya un
   <KartuWarga slug="mang-enjen" />
   <KartuWarga slug="pak-sekdes" />
 </div>
+
+<p><small>Semua nama dan biodata warga di sini adalah fiksi; kesamaan dengan orang nyata hanya kebetulan. Lihat <a href="/disclaimer">Disclaimer</a>.</small></p>

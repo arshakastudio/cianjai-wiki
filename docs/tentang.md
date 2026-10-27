@@ -54,3 +54,9 @@ kertas, dan kopi yang keburu dingin. Wifi balai pun masih menumpang ke warung.
   <KartuWarga slug="bang-hos" />
   <KartuWarga slug="mang-enjen" />
 </div>
+
+## Catatan: ini cerita fiksi
+
+Semua tokoh, nama, tempat, dan peristiwa di Kampung Cianj.AI adalah rekaan. Kalau ada nama yang
+kebetulan sama dengan orang atau tempat sungguhan, itu tidak disengaja. Selengkapnya ada di
+[Disclaimer](/disclaimer).
