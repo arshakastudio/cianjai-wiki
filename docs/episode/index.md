@@ -18,6 +18,7 @@ kalau ditonton berurutan, kampungnya terlihat tumbuh.
   <EpisodeKartu :no="11" judul="Gaji Pertama" gambar="/episode/gaji-pertama-sampul.jpg" tayang="23 Okt 2026" durasi="38 dtk" href="https://www.instagram.com/reel/De0xRUNFOte/" />
   <EpisodeKartu :no="12" judul="Bendahara" gambar="/episode/kas-kampung-sampul.jpg" tayang="25 Okt 2026" durasi="38 dtk" href="https://www.instagram.com/reel/De6H7ksgc_C/" />
   <EpisodeKartu :no="13" judul="Pemasukan Pertama" gambar="/episode/pemasukan-pertama-sampul.jpg" tayang="26 Okt 2026" durasi="38 dtk" href="https://www.instagram.com/reel/De8fV1-Gxmd/" />
+  <EpisodeKartu :no="14" judul="Ronda Pertama" gambar="/episode/ronda-pertama-sampul.jpg" tayang="27 Okt 2026" durasi="46 dtk" href="https://www.instagram.com/reel/De_G_s6DuSI/" />
 </div>
 
 ## Episode 1 · Warga Pertama
@@ -207,3 +208,17 @@ Pagi di balai, Pak Sekdes melapor bahwa kas kampung akhirnya ada isinya: iuran w
 > "Itu namanya perputaran ekonomi, Des."
 
 **Pertama kali:** Pemasukan pertama kas kampung, dari iuran warung Bang Hos.
+
+## Episode 14 · Ronda Pertama
+
+![Pak Lurah berdiri di depan kentongan pos pertama pada malam hari](/episode/ronda-pertama-adegan.jpg){.adegan}
+
+**Tayang:** 27 Oktober 2026 · ±46 detik · [Tonton di Instagram](https://www.instagram.com/reel/De_G_s6DuSI/)
+
+Senja di balai, Pak Lurah mewajibkan ronda karena kas kampung sudah ada isinya. Pak Sekdes menjawab kasnya sudah nol lagi, lalu bilang ia tidur jam delapan dan Tukang Ketik lembur. Jadwal ronda "bagi rata" pun jatuh ke Pak Lurah semua. Malamnya di pos pertama, Pak Lurah jaga di depan kentongan, dan seekor ayam datang jadi calon partner.
+
+> "Ya udah atuh. Senin aku, Selasa aku, Rabu aku."
+
+> "Kentongan pertama, partnernya langsung resign."
+
+**Pertama kali:** Ronda pertama, jaga malam pertama kampung.
