@@ -19,6 +19,7 @@ kalau ditonton berurutan, kampungnya terlihat tumbuh.
   <EpisodeKartu :no="12" judul="Bendahara" gambar="/episode/kas-kampung-sampul.jpg" tayang="25 Okt 2026" durasi="38 dtk" href="https://www.instagram.com/reel/De6H7ksgc_C/" />
   <EpisodeKartu :no="13" judul="Pemasukan Pertama" gambar="/episode/pemasukan-pertama-sampul.jpg" tayang="26 Okt 2026" durasi="38 dtk" href="https://www.instagram.com/reel/De8fV1-Gxmd/" />
   <EpisodeKartu :no="14" judul="Ronda Pertama" gambar="/episode/ronda-pertama-sampul.jpg" tayang="27 Okt 2026" durasi="46 dtk" href="https://www.instagram.com/reel/De_G_s6DuSI/" />
+  <EpisodeKartu :no="15" judul="Sangat Mendesak" gambar="/episode/kakus-umum-sampul.jpg" tayang="28 Okt 2026" durasi="40 dtk" href="https://www.instagram.com/reel/DfBr-SVE0aJ/" />
 </div>
 
 ## Episode 1 · Warga Pertama
@@ -222,3 +223,17 @@ Senja di balai, Pak Lurah mewajibkan ronda karena kas kampung sudah ada isinya. 
 > "Kentongan pertama, partnernya langsung resign."
 
 **Pertama kali:** Ronda pertama, jaga malam pertama kampung.
+
+## Episode 15 · Sangat Mendesak
+
+![Pak Lurah dan Pak Sekdes berdiri di depan kakus umum di kaki tebing](/episode/kakus-umum-adegan.jpg){.adegan}
+
+**Tayang:** 28 Oktober 2026 · ±40 detik · [Tonton di Instagram](https://www.instagram.com/reel/DfBr-SVE0aJ/)
+
+Pagi di balai, Pak Sekdes menyampaikan usulan warga: kampung butuh kakus. Pak Lurah, yang duduk santai di kursinya, bilang belum mendesak dan minta dibahas di rapat bulan depan. Tapi tak lama kemudian wajahnya mendadak tegang, dan tanda "!" berdenyut di atas kepalanya. Ia bangkit, jalan cepat ke kaki tebing, dan di tanah kosong itu sebuah kakus berdiri sendiri tanpa rapat dan tanpa sepatah kata. Pak Sekdes menyusul dan menagih kalimat pembuka tadi.
+
+> "Jadi, Pak... sekarang sudah mendesak?"
+
+> "Jangan ajak ngobrol dulu!"
+
+**Pertama kali:** Kakus umum pertama, di kaki tebing.
