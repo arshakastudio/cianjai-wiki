@@ -20,6 +20,7 @@ kalau ditonton berurutan, kampungnya terlihat tumbuh.
   <EpisodeKartu :no="13" judul="Pemasukan Pertama" gambar="/episode/pemasukan-pertama-sampul.jpg" tayang="26 Okt 2026" durasi="38 dtk" href="https://www.instagram.com/reel/De8fV1-Gxmd/" />
   <EpisodeKartu :no="14" judul="Ronda Pertama" gambar="/episode/ronda-pertama-sampul.jpg" tayang="27 Okt 2026" durasi="46 dtk" href="https://www.instagram.com/reel/De_G_s6DuSI/" />
   <EpisodeKartu :no="15" judul="Sangat Mendesak" gambar="/episode/kakus-umum-sampul.jpg" tayang="28 Okt 2026" durasi="40 dtk" href="https://www.instagram.com/reel/DfBr-SVE0aJ/" />
+  <EpisodeKartu :no="16" judul="Semua Kebagian" gambar="/episode/rapat-pertama-sampul.jpg" tayang="30 Okt 2026" durasi="44 dtk" href="https://www.instagram.com/reel/DfG_4gJDI0J/" />
 </div>
 
 ## Episode 1 · Warga Pertama
@@ -237,3 +238,17 @@ Pagi di balai, Pak Sekdes menyampaikan usulan warga: kampung butuh kakus. Pak Lu
 > "Jangan ajak ngobrol dulu!"
 
 **Pertama kali:** Kakus umum pertama, di kaki tebing.
+
+## Episode 16 · Semua Kebagian
+
+![Pak Lurah di kursi balai dengan Pak Sekdes, Tukang Ketik, dan Bang Hos di depannya, seekor ayam lewat di halaman](/episode/rapat-pertama-adegan.jpg){.adegan}
+
+**Tayang:** 30 Oktober 2026 · ±44 detik · [Tonton di Instagram](https://www.instagram.com/reel/DfG_4gJDI0J/)
+
+Siang di balai, Pak Lurah membuka rapat resmi pertama dengan agenda tunggal: membentuk kabinet, dan harus gemuk biar kelihatan kerja. Tukang Ketik dan Bang Hos langsung kebagian jabatan baru, sementara Pak Sekdes malah merangkap empat sekaligus. Pak Lurah menyebutnya efisiensi. Lalu Pak Sekdes bertanya satu hal yang tak terpikir siapa pun, dan yang lewat di depan balai cuma seekor ayam.
+
+> "Efisiensi, Des. Rangkap jabatan biar hemat anggaran."
+
+> "...Rakyatnya nyusul."
+
+**Pertama kali:** Rapat resmi pertama, tempat kabinet kampung pertama dibentuk.
