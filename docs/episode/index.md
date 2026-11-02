@@ -21,6 +21,7 @@ kalau ditonton berurutan, kampungnya terlihat tumbuh.
   <EpisodeKartu :no="14" judul="Ronda Pertama" gambar="/episode/ronda-pertama-sampul.jpg" tayang="27 Okt 2026" durasi="46 dtk" href="https://www.instagram.com/reel/De_G_s6DuSI/" />
   <EpisodeKartu :no="15" judul="Sangat Mendesak" gambar="/episode/kakus-umum-sampul.jpg" tayang="28 Okt 2026" durasi="40 dtk" href="https://www.instagram.com/reel/DfBr-SVE0aJ/" />
   <EpisodeKartu :no="16" judul="Semua Kebagian" gambar="/episode/rapat-pertama-sampul.jpg" tayang="30 Okt 2026" durasi="44 dtk" href="https://www.instagram.com/reel/DfG_4gJDI0J/" />
+  <EpisodeKartu :no="17" judul="Sendiri-sendiri" gambar="/episode/warga-keempat-sampul.jpg" tayang="2 Nov 2026" durasi="40 dtk" href="https://www.instagram.com/reel/DfOp2MLAFLR/" />
 </div>
 
 ## Episode 1 · Warga Pertama
@@ -252,3 +253,17 @@ Siang di balai, Pak Lurah membuka rapat resmi pertama dengan agenda tunggal: mem
 > "...Rakyatnya nyusul."
 
 **Pertama kali:** Rapat resmi pertama, tempat kabinet kampung pertama dibentuk.
+
+## Episode 17 · Sendiri-sendiri
+
+![Pak Lurah dan Pak Sekdes berdiri di halaman musholla yang baru berdiri, seekor ayam di dekat mereka](/episode/warga-keempat-adegan.jpg){.adegan}
+
+**Tayang:** 2 November 2026 · ±40 detik · [Tonton di Instagram](https://www.instagram.com/reel/DfOp2MLAFLR/)
+
+Siang di depan balai, Pak Lurah bertanya tadi dzuhur Pak Sekdes shalat di mana. Ternyata sama-sama di balai, sama-sama sendirian, dan tidak ketemu. Kampung ini cuma berdua, kantornya cuma satu, tapi shalatnya sendiri-sendiri. Maka keduanya berjalan ke tanah kosong dan musholla pertama berdiri, biar bisa berjamaah. Begitu masuk waktu, imam sudah ada dan makmum sudah ada, tinggal satu yang belum kebagian.
+
+> "Bapak imam, saya makmum. Yang mukul bedug siapa?"
+
+> "Besok pasang lowongan marbot. Syaratnya: bukan ayam."
+
+**Pertama kali:** Musholla pertama.
