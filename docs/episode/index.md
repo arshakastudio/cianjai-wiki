@@ -22,6 +22,7 @@ kalau ditonton berurutan, kampungnya terlihat tumbuh.
   <EpisodeKartu :no="15" judul="Sangat Mendesak" gambar="/episode/kakus-umum-sampul.jpg" tayang="28 Okt 2026" durasi="40 dtk" href="https://www.instagram.com/reel/DfBr-SVE0aJ/" />
   <EpisodeKartu :no="16" judul="Semua Kebagian" gambar="/episode/rapat-pertama-sampul.jpg" tayang="30 Okt 2026" durasi="44 dtk" href="https://www.instagram.com/reel/DfG_4gJDI0J/" />
   <EpisodeKartu :no="17" judul="Sendiri-sendiri" gambar="/episode/warga-keempat-sampul.jpg" tayang="2 Nov 2026" durasi="40 dtk" href="https://www.instagram.com/reel/DfOp2MLAFLR/" />
+  <EpisodeKartu :no="18" judul="Lolos Seleksi" gambar="/episode/marbot-pertama-sampul.jpg" tayang="5 Nov 2026" durasi="66 dtk" href="https://www.instagram.com/reel/DfWOwDGGYrQ/" />
 </div>
 
 ## Episode 1 · Warga Pertama
@@ -267,3 +268,17 @@ Siang di depan balai, Pak Lurah bertanya tadi dzuhur Pak Sekdes shalat di mana. 
 > "Besok pasang lowongan marbot. Syaratnya: bukan ayam."
 
 **Pertama kali:** Musholla pertama.
+
+## Episode 18 · Lolos Seleksi
+
+![Tukang Ketik berdiri sendirian di dekat pos 1, Pak Lurah bicara dari luar layar](/episode/marbot-pertama-adegan.jpg){.adegan}
+
+**Tayang:** 5 November 2026 · ±66 detik · [Tonton di Instagram](https://www.instagram.com/reel/DfWOwDGGYrQ/)
+
+Siang di balai, lowongan marbot sudah dipasang dari pagi, dan pelamarnya baru satu yang ngantre: seekor ayam. Lalu Mang Enjen datang dari jalan barat, bilang syaratnya pas pisan, dan wawancara pun dimulai. Jawabannya belum pernah jadi marbot, nyapu kalau ingat, bangun pagi kalau dibangunin ayam. Pak Sekdes sampai harus bilang bahwa jawabannya jelek semua. Di ujung cerita, Tukang Ketik yang kerjaannya sudah beres ikut muncul, dan Pak Lurah membuka ajakan untuk penonton.
+
+> "Syarat terakhir: bukan ayam."
+
+> "Saingannya ayam, Des."
+
+**Pertama kali:** Warga keempat, Mang Enjen, diterima jadi marbot musholla, dan ajakan vote pertama untuk penonton.
